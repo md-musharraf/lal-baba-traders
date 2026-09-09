@@ -17,7 +17,8 @@ export const productsData = [
     features_en: ["Rapid early strength development", "Exceptional anti-crack resistance", "Low heat of hydration preventing thermal cracks"],
     features_hi: ["तेज शुरुआती मजबूती", "दरार-रोधी विशेष संरचना", "कम तापीय प्रभाव जिससे छत नहीं चटकती"],
     price_indicator: "₹360 - ₹385 / Bag",
-    icon: "Layers"
+    icon: "Layers",
+    image: "/images/products/cement-ultratech.jpg"
   },
   {
     id: "cement-dalmia-dsp",
@@ -36,7 +37,8 @@ export const productsData = [
     features_en: ["Dense micro-structure stops water penetration", "High chemical & sulphate resistance", "Long-term strength gain over 28+ days"],
     features_hi: ["सघन संरचना पानी के रिसाव को रोके", "नमी और सीलन से पूर्ण सुरक्षा", "लंबे समय तक निरंतर बढ़ती ताकत"],
     price_indicator: "₹370 - ₹395 / Bag",
-    icon: "ShieldCheck"
+    icon: "ShieldCheck",
+    image: "/images/products/cement-ultratech.jpg"
   },
   {
     id: "cement-acc-concrete-plus",
@@ -55,7 +57,8 @@ export const productsData = [
     features_en: ["Water-repellent barrier keeps steel rust-free", "Smooth buttery workability", "Tested against severe rains"],
     features_hi: ["सरिया को जंग से बचाने वाला सुरक्षा कवच", "काम करने में आसान व चिकनी फिनिशिंग", "भारी बारिश व धूप में टिकाऊ"],
     price_indicator: "₹355 - ₹380 / Bag",
-    icon: "Shield"
+    icon: "Shield",
+    image: "/images/products/cement-ultratech.jpg"
   },
   {
     id: "cement-ambuja-kawach",
@@ -74,7 +77,8 @@ export const productsData = [
     features_en: ["Active siloxane water repellent properties", "Reduces efflorescence (shora) on walls", "No need for external waterproofing chemicals in mix"],
     features_hi: ["पानी को सोखने से रोकने वाला सिलोक्सेन फॉर्मूला", "दीवारों पर शोरा (सफेद परत) से मुक्ति", "अलग से वाटरप्रूफिंग केमिकल की आवश्यकता नहीं"],
     price_indicator: "₹375 - ₹405 / Bag",
-    icon: "Droplets"
+    icon: "Droplets",
+    image: "/images/products/cement-ultratech.jpg"
   },
 
   // --- TMT STEEL CATEGORY ---
@@ -95,7 +99,8 @@ export const productsData = [
     features_en: ["Strict phosphorus/sulphur control prevents brittleness", "Superior rib pattern for stronger concrete bonding", "100% digital weighbridge verified on every load"],
     features_hi: ["फास्फोरस व सल्फर की शुद्धता से सरिया टूटता नहीं", "कंक्रीट के साथ अटूट पकड़ बनाने वाली पसलियां", "धर्मकांटा पर्ची से सही वजन की पूरी गारंटी"],
     price_indicator: "Daily Market Rate / Ton",
-    icon: "Cpu"
+    icon: "Cpu",
+    image: "/images/products/steel-tata-tiscon.jpg"
   },
   {
     id: "steel-jindal-panther-550d",
@@ -114,7 +119,8 @@ export const productsData = [
     features_en: ["Consistent diameter with zero gauge variation", "High fire resistance up to 600°C", "Easy on-site bending without micro-cracks"],
     features_hi: ["सटीक मोटाई व वजन में एकरूपता", "600 डिग्री तक आग सहने की क्षमता", "मोड़ने पर दरार नहीं पड़ती"],
     price_indicator: "Daily Market Rate / Ton",
-    icon: "Hammer"
+    icon: "Hammer",
+    image: "/images/products/steel-tata-tiscon.jpg"
   },
   {
     id: "steel-binding-wire",
@@ -133,7 +139,8 @@ export const productsData = [
     features_en: ["Annealed for easy hand twisting without snapping", "Rust-retardant coating", "Uniform thickness"],
     features_hi: ["हाथ से आसानी से मुड़ने वाला तार", "जंग से सुरक्षित कोटिंग", "एक समान मोटाई"],
     price_indicator: "₹65 - ₹78 / Kg",
-    icon: "Link"
+    icon: "Link",
+    image: "/images/products/steel-tata-tiscon.jpg"
   },
 
   // --- SAND & AGGREGATE CATEGORY ---
@@ -154,7 +161,8 @@ export const productsData = [
     features_en: ["Directly dredged from clean river beds", "Natural sharp angular grains create tight concrete matrix", "No organic impurities or clay lumps"],
     features_hi: ["सीधे नदी के पट्टे से ताजा खनन", "दानेदार व नुकीले कण कंक्रीट को मजबूत बनाएं", "मिट्टी और कचरे से पूर्ण मुक्त"],
     price_indicator: "₹38 - ₹48 / CFT (Area dependent)",
-    icon: "Wind"
+    icon: "Wind",
+    image: "/images/products/sand-aggregate.jpg"
   },
   {
     id: "aggregate-20mm-gitti",
@@ -173,7 +181,8 @@ export const productsData = [
     features_en: ["Machine-crushed angular shape gives maximum bond", "Dense volcanic basalt rock with high load bearing", "Washed to remove quarry dust"],
     features_hi: ["मशीन से टूटी चौकोर गिट्टी से सीमेंट की बेहतर पकड़", "काले मजबूत पत्थर से बनी भारी गिट्टी", "धूल व चूरा रहित"],
     price_indicator: "₹42 - ₹54 / CFT",
-    icon: "Box"
+    icon: "Box",
+    image: "/images/products/sand-aggregate.jpg"
   },
   {
     id: "aggregate-10mm-gitti",
@@ -192,7 +201,8 @@ export const productsData = [
     features_en: ["Fills microscopic voids in concrete pour", "Prevents honeycomb formation in dense reinforcement", "Guaranteed hard stone"],
     features_hi: ["सरिया के बीच खाली जगह को पूरा भरती है", "छत में हनीकॉम्ब (गड्ढे) बनने से रोकती है", "कड़क हार्ड स्टोन"],
     price_indicator: "₹44 - ₹56 / CFT",
-    icon: "Grid"
+    icon: "Grid",
+    image: "/images/products/sand-aggregate.jpg"
   },
 
   // --- BRICKS & BLOCKS CATEGORY ---
@@ -213,7 +223,8 @@ export const productsData = [
     features_en: ["Uniform sharp edges and standard rectangular size", "High compressive strength exceeding 10.5 N/mm²", "Low water absorption under 15%"],
     features_hi: ["सीधे कोने और सटीक माप", "दबाव सहने की जबरदस्त क्षमता", "पानी कम सोखती है जिससे दीवारें मजबूत रहती हैं"],
     price_indicator: "₹8.50 - ₹10.50 / Piece",
-    icon: "Columns"
+    icon: "Columns",
+    image: "/images/products/bricks-clay-blocks.jpg"
   },
   {
     id: "bricks-fly-ash-eco",
@@ -232,7 +243,8 @@ export const productsData = [
     features_en: ["Saves 25% plaster cement due to ultra-smooth face", "Uniform dimensions with zero breakage during transit", "Eco-friendly thermal insulation"],
     features_hi: ["एकदम सीधी सतह जिससे प्लास्टर का खर्चा 25% बचता है", "साइज में 100% समानता, कम टूट-फूट", "कमरे को ठंडा रखने में सहायक"],
     price_indicator: "₹5.50 - ₹6.50 / Piece",
-    icon: "Feather"
+    icon: "Feather",
+    image: "/images/products/bricks-clay-blocks.jpg"
   },
   {
     id: "blocks-aac-lightweight",
@@ -251,7 +263,8 @@ export const productsData = [
     features_en: ["3x faster construction speed compared to red bricks", "Reduces dead load on building frame by 50%", "Superb sound and heat insulation"],
     features_hi: ["ईंट के मुकाबले 3 गुना तेज चिनाई", "मकान के पिलर पर 50% कम वजन", "गर्मी और आवाज को अंदर आने से रोकता है"],
     price_indicator: "₹55 - ₹85 / Block",
-    icon: "Square"
+    icon: "Square",
+    image: "/images/products/bricks-clay-blocks.jpg"
   },
 
   // --- CHEMICALS & PUTTY CATEGORY ---
@@ -272,7 +285,8 @@ export const productsData = [
     features_en: ["Eliminates micro-pores and capillary channels in concrete", "Improves workability without extra water", "Protects reinforcing steel from corrosion"],
     features_hi: ["कंक्रीट के सूक्ष्म छिद्रों को बंद कर पानी का रिसाव रोके", "बिना ज्यादा पानी मिलाए कंक्रीट को लचीला बनाए", "सरिया को हमेशा जंग से सुरक्षित रखे"],
     price_indicator: "₹160 / 1L Can",
-    icon: "ShieldAlert"
+    icon: "ShieldAlert",
+    image: "/images/products/chemicals-putty.jpg"
   },
   {
     id: "putty-birla-white",
@@ -291,6 +305,7 @@ export const productsData = [
     features_en: ["Binds strongly with base plaster", "Prevents paint flaking and water seepage blisters", "Provides ultra-bright smooth white canvas for paint"],
     features_hi: ["प्लास्टर के साथ मजबूत पकड़", "पेंट को पपड़ी बनकर छूटने से रोके", "पेंट के रंगों को दे शानदार चमक"],
     price_indicator: "₹720 - ₹820 / 40kg Bag",
-    icon: "Sparkles"
+    icon: "Sparkles",
+    image: "/images/products/chemicals-putty.jpg"
   }
 ];
