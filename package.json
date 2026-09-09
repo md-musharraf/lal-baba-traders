@@ -1,0 +1,20 @@
+{
+  "name": "lal-baba-traders",
+  "version": "1.0.0",
+  "description": "Official Website and Material Estimator for Lal Baba Traders - Deoghar, Jharkhand",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "building-materials",
+    "cement-dealer",
+    "deoghar",
+    "jasidih",
+    "construction",
+    "tmt-steel"
+  ],
+  "author": "Lal Baba Traders",
+  "license": "ISC"
+}

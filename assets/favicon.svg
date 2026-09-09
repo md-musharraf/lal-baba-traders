@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="lbtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#lbtGrad)" />
+  <path d="M12 48 L12 16 L20 16 L20 40 L34 40 L34 48 Z" fill="#FFFFFF" />
+  <path d="M30 16 L52 16 L52 24 L38 24 L38 28 L48 28 L48 36 L38 36 L38 48 L30 48 Z" fill="url(#amberGrad)" />
+  <circle cx="48" cy="44" r="5" fill="#10B981" />
+</svg>

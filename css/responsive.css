@@ -1,0 +1,224 @@
+/*
+ * Lal Baba Traders - Advanced Mobile-First & Responsive Stylesheet
+ * Optimized to UI/UX Pro Max standards:
+ * - Touch targets >= 44x44pt (48dp for primary buttons)
+ * - Zero horizontal overflow (320px to 4K displays)
+ * - Safe area compliance (iPhone Dynamic Island & Android Gesture Bars)
+ * - App-like horizontal swipeable tabs
+ * - Native card transformations for mobile data tables
+ * - High contrast outdoor sunlight legibility
+ */
+
+/* ==========================================================================
+   1. VIEWPORT & ROOT MOBILE GUARDS
+   ========================================================================== */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+  touch-action: manipulation;
+}
+
+/* Hide scrollbar for clean horizontal swiping on mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Touch feedback for all interactive controls */
+button, a, select, input, textarea {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:active, a:active {
+  transform: scale(0.98);
+  transition: transform 0.1s ease;
+}
+
+/* ==========================================================================
+   2. MOBILE STICKY BOTTOM ACTION BAR (Touch target >= 48dp)
+   ========================================================================== */
+.mobile-bottom-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-bottom-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(64px + env(safe-area-inset-bottom, 0px));
+    background: #0B1120;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    z-index: 50;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px)) 12px;
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* Body bottom cushion so content is never obscured by sticky bar */
+  body {
+    padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  /* Reposition floating WhatsApp button above the sticky bar */
+  .floating-wa-btn {
+    bottom: calc(76px + env(safe-area-inset-bottom, 0px)) !important;
+    right: 14px !important;
+    width: 50px !important;
+    height: 50px !important;
+    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+  }
+
+  /* Back to top button position */
+  #back-to-top {
+    bottom: calc(76px + env(safe-area-inset-bottom, 0px)) !important;
+    left: 14px !important;
+  }
+}
+
+/* ==========================================================================
+   3. MOBILE APP-LIKE SWIPEABLE TABS
+   ========================================================================== */
+.mobile-swipe-tabs {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  padding: 4px 16px 8px 16px;
+  gap: 8px;
+}
+
+.mobile-swipe-tabs > button {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   4. ADAPTIVE MOBILE RATES: TABLE (DESKTOP) VS CARDS (MOBILE)
+   ========================================================================== */
+.desktop-rates-table {
+  display: block;
+}
+
+.mobile-rates-cards {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .desktop-rates-table {
+    display: none !important;
+  }
+
+  .mobile-rates-cards {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+/* ==========================================================================
+   5. MOBILE MAP REFINEMENT
+   ========================================================================== */
+@media (max-width: 768px) {
+  #depot-leaflet-map {
+    height: 280px !important;
+    border-radius: 14px !important;
+  }
+}
+
+/* ==========================================================================
+   6. RESPONSIVE TYPOGRAPHY & TOUCH TARGET SIZING
+   ========================================================================== */
+@media (max-width: 640px) {
+  /* Headings fluid scaling */
+  h1 {
+    font-size: 1.85rem !important;
+    line-height: 1.22 !important;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.015em;
+  }
+
+  h3 {
+    font-size: 1.2rem !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Form controls touch target minimum 48px */
+  input, select, textarea {
+    font-size: 16px !important; /* Prevents auto-zoom on iOS Safari */
+    min-height: 48px;
+  }
+
+  textarea {
+    min-height: 96px;
+  }
+
+  /* Buttons touch target */
+  .btn-touch, button[type="submit"], #calc-submit-btn, #calc-reset-btn, #calc-wa-btn, #calc-print-btn {
+    min-height: 48px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  /* Preset area chips tap target */
+  .area-preset-chip {
+    padding: 8px 14px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+  }
+}
+
+/* Ultra-compact phones (320px - 380px) */
+@media (max-width: 380px) {
+  h1 {
+    font-size: 1.65rem !important;
+  }
+
+  h2 {
+    font-size: 1.35rem !important;
+  }
+
+  .calc-results-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ==========================================================================
+   7. OFF-CANVAS MOBILE DRAWER NAVIGATION
+   ========================================================================== */
+#mobile-menu-drawer {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+#mobile-menu-drawer:not(.hidden) {
+  display: block;
+  animation: slideDownMobile 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideDownMobile {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
